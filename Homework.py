@@ -4,11 +4,12 @@ def count_calls():
     calls += 1
 
 def string_info(string):
-    upper_case = string.upper()
-    lower_case = string.lower()
-    return (len(string), upper_case, lower_case)
+     count_calls()
+    return len(string), string.upper, string.lower
+    
 
 def is_contains(string, list_to_search):
+    count_calls()
     for item in list_to_search:
         if item.lower().strip() == string.lower().strip():
             return True
